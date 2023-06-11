@@ -36,4 +36,9 @@ start();
 // app.use("/.netlify/functions/api", routes);
 module.exports.handler = app;
 
+// "scripts": {
+//   "start": "cross-env NODE_ENV=production node app.js",
+//   "serve": "cross-env NODE_ENV=development nodemon app.js"
+// },
+
 
