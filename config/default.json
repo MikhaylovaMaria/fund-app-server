@@ -1,0 +1,6 @@
+{
+  "port": 8080,
+  "mongoUri": "mongodb+srv://mikhaylovams1:masha123@fund-app-server.hcoxvxu.mongodb.net/app?retryWrites=true&w=majority",
+  "accessSecret": "lalala",
+  "refreshSecret": "blablabla"
+}

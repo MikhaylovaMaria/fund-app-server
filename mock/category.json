@@ -1,0 +1,115 @@
+[
+  {
+    "name": "Основной счет",
+    "type": "base",
+    "article": "account",
+    "icon": "masterAccount"
+  },
+  {
+    "name": "Другое",
+    "type": "base",
+    "article": "other",
+    "icon": "other"
+  },
+  {
+    "name": "Автомобиль",
+    "type": "base",
+    "article": "operation",
+    "icon": "car"
+  },
+
+  {
+    "name": "Здоровье",
+    "type": "base",
+    "article": "operation",
+    "icon": "health"
+  },
+  {
+    "name": "Kрасота",
+    "type": "base",
+    "article": "operation",
+    "icon": "beauty"
+  },
+  {
+    "name": "Образование",
+    "type": "base",
+    "article": "operation",
+    "icon": "book"
+  },
+  {
+    "name": "Одежда и аксессуары",
+    "type": "base",
+    "article": "operation",
+    "icon": "cloth"
+  },
+  {
+    "name": "Питание",
+    "type": "base",
+    "article": "operation",
+    "icon": "food"
+  },
+  {
+    "name": "Развлечение",
+    "type": "base",
+    "article": "operation",
+    "icon": "star"
+  },
+  {
+    "name": "Транспорт",
+    "type": "base",
+    "article": "operation",
+    "icon": "car"
+  },
+
+  {
+    "name": "Подарки",
+    "type": "base",
+    "article": "operation",
+    "icon": "gift"
+  },
+  {
+    "name": "Бытовая техника",
+    "type": "base",
+    "article": "operation",
+    "icon": "teсhnology"
+  },
+  {
+    "name": "Дом",
+    "type": "base",
+    "article": "operation",
+    "icon": "home"
+  },
+  {
+    "name": "Связь",
+    "type": "base",
+    "article": "operation",
+    "icon": "phone"
+  },
+
+  {
+    "name": "Ипотека",
+    "type": "base",
+    "article": "account",
+    "icon": "home"
+  },
+  {
+    "name": "Kредитная карта",
+    "type": "base",
+    "article": "account",
+    "icon": "card"
+  },
+
+  {
+    "name": "Сбережения",
+    "type": "base",
+    "article": "account",
+    "icon": "saving"
+  },
+
+  {
+    "name": "Инвестиции",
+    "type": "base",
+    "article": "account",
+    "icon": "investments"
+  }
+]
