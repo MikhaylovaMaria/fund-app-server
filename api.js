@@ -16,7 +16,7 @@ app.use("/upload", express.static("uploads"));
 
 app.use("/api", routes);
 
-const PORT = config.get("port") ?? 8080;
+const PORT = process.env.PORT || 8080;
 
 async function start() {
   try {
@@ -40,5 +40,3 @@ start();
 //   "start": "cross-env NODE_ENV=production node app.js",
 //   "serve": "cross-env NODE_ENV=development nodemon app.js"
 // },
-
-
