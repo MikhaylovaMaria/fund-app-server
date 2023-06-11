@@ -1,11 +1,11 @@
 const express = require("express");
-// const mongoose = require("mongoose");
-// const config = require("config");
+const mongoose = require("mongoose");
+const config = require("config");
 // const chalk = require("chalk");
 // const cors = require("cors");
 // const routes = require("./routes");
 
-// const initDatabase = require("./startUp/initDatabase");
+const initDatabase = require("./startUp/initDatabase");
 // const serverless = require("serverless-http");
 const app = express();
 
@@ -21,10 +21,10 @@ const PORT = 4000;
 
 async function start() {
   try {
-    // mongoose.connection.once("open", () => {
-    //   initDatabase();
-    // });
-    // await mongoose.connect(config.get("mongoUri"));
+    mongoose.connection.once("open", () => {
+      initDatabase();
+    });
+    await mongoose.connect(config.get("mongoUri"));
     app.listen(PORT, () => {
       console.log(chalk.green(`Server started on port:${PORT}`));
     });
