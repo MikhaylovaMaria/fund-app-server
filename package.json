@@ -7,8 +7,7 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "node api.js",
-    "serve": "cross-env NODE_ENV=development nodemon api.js"
+    "start": "node api.js"
   },
   "author": "",
   "license": "ISC",
