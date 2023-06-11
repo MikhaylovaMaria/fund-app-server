@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const config = require("config");
-// const chalk = require("chalk");
+const chalk = require("chalk");
 // const cors = require("cors");
 // const routes = require("./routes");
 
