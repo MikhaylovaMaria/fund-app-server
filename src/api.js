@@ -17,7 +17,7 @@ app.use("/upload", express.static("uploads"));
 app.use("/api", routes);
 
 // const PORT = process.env.PORT || 8080;
-const PORT = 4000;
+const PORT = 8080;
 
 async function start() {
   try {
