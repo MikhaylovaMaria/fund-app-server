@@ -32,6 +32,9 @@ try {
   console.log(chalk.red(e.message));
   process.exit(1);
 }
+app.get("/", (req, res) => {
+  res.send("HELLO");
+});
 // }
 // start();
 
