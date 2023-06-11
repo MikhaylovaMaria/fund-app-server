@@ -19,24 +19,24 @@ const app = express();
 // const PORT = process.env.PORT || 8080;
 const PORT = 4000;
 
-// async function start() {
-//   try {
-//     mongoose.connection.once("open", () => {
-//       initDatabase();
-//     });
-//     await mongoose.connect(config.get("mongoUri"));
-//     app.listen(PORT, () => {
-//       console.log(chalk.green(`Server started on port:${PORT}`));
-//     });
-//   } catch (error) {
-//     console.log(chalk.red(e.message));
-//     process.exit(1);
-//   }
-// }
-// start();
-app.listen(PORT, () => {
-  console.log(chalk.green(`Server started on port:${PORT}`));
-});
+async function start() {
+  try {
+    // mongoose.connection.once("open", () => {
+    //   initDatabase();
+    // });
+    // await mongoose.connect(config.get("mongoUri"));
+    app.listen(PORT, () => {
+      console.log(chalk.green(`Server started on port:${PORT}`));
+    });
+  } catch (error) {
+    console.log(chalk.red(e.message));
+    process.exit(1);
+  }
+}
+start();
+// app.listen(PORT, () => {
+//   console.log(chalk.green(`Server started on port:${PORT}`));
+// });
 
 app.get("/", (req, res) => {
   res.send("HEELOW");
