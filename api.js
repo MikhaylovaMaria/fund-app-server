@@ -18,28 +18,6 @@ app.use("/api", routes);
 
 const PORT = config.get("port") ?? 8080;
 
-// const storage = multer.diskStorage({
-//   destination: (_, __, cb) => {
-//     cb(null, "uploads");
-//   },
-//   filename: (_, file, cb) => {
-//     cb(null, file.originalname);
-//   },
-// });
-
-// const upload = multer({ storage });
-// app.post("/upload", upload.single("image"), (req, res) => {
-//   res.json({
-//     url: `/uploads/${req.file.originalname}`,
-//   });
-// });
-
-// if (process.env.NODE_ENV === "production") {
-//   console.log("Production");
-// } else {
-//   console.log("Development");
-// }
-
 async function start() {
   try {
     mongoose.connection.once("open", () => {
@@ -56,6 +34,6 @@ async function start() {
 }
 start();
 // app.use("/.netlify/functions/api", routes);
-// module.exports.handler = serverless(app);
+module.exports.handler = app;
 
 
