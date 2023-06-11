@@ -3,9 +3,9 @@ const mongoose = require("mongoose");
 const config = require("config");
 const chalk = require("chalk");
 const cors = require("cors");
-const routes = require("./routes");
+const routes = require("../routes");
 
-const initDatabase = require("./startUp/initDatabase");
+const initDatabase = require("../startUp/initDatabase");
 const serverless = requier("serverless-http");
 const app = express();
 
