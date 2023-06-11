@@ -4,7 +4,7 @@ const config = require("config");
 const chalk = require("chalk");
 const cors = require("cors");
 const routes = require("./routes");
-
+console.log("FREAKING FREAK");
 const initDatabase = require("./startUp/initDatabase");
 // const serverless = require("serverless-http");
 const app = express();
