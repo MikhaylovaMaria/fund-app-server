@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 app.use("/upload", express.static("uploads"));
 
-app.use("/api", routes);
+// app.use("/api", routes);
 
 // const PORT = process.env.PORT || 8080;
 const PORT = 4000;
@@ -42,24 +42,6 @@ app.get("/", (req, res) => {
   res.send("HEELOW");
 });
 
-// const express = require("express");
-
-// const app = express();
-// const PORT = 4000;
-
-// app.listen(PORT, () => {
-//   console.log(`API listening on PORT ${PORT} `);
-// });
-
-// app.get("/", (req, res) => {
-//   res.send("Hey this is my API running 🥳");
-// });
-
-// app.get("/about", (req, res) => {
-//   res.send("This is my about route..... ");
-// });
-
-// app.use("/.netlify/functions/api", routes);
 module.exports = app;
 
 // "scripts": {
