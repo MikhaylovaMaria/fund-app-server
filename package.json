@@ -7,7 +7,8 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "node api.js"
+    "start": "node src/api.js",
+    "vercel-build": "echo hello"
   },
   "author": "",
   "license": "ISC",
