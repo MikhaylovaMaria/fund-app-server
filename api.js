@@ -34,7 +34,7 @@ async function start() {
 }
 start();
 // app.use("/.netlify/functions/api", routes);
-module.exports.handler = app;
+// module.exports.handler = app;
 
 // "scripts": {
 //   "start": "cross-env NODE_ENV=production node app.js",
