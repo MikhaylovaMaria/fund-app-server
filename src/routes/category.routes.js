@@ -84,5 +84,8 @@ router.patch("/:categoryId", async (req, res) => {
     });
   }
 });
+router.get("/", (req,res)=>{
+  res.status(200).json({message: "hello"})
+})
 
 module.exports = router;
